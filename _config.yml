@@ -17,6 +17,8 @@ linkedin_username: shanikaw
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 
 
 exclude: [shanika.github.io.iml, .gitignore]
