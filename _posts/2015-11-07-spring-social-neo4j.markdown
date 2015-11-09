@@ -40,7 +40,7 @@ Spring social project has an in built data repository implementation for relatio
 3) Configure UsersConnectionRepository in spring social config
 
   I have injected Neo4jServer class from Spring data neo4j to get the Neo4j Server URL which is already configured in Spring Data Neo4j. We can directly pass the URL string without using Neo4jServer as well. 
-    
+
     @Autowired
     private Neo4jServer server;
     
