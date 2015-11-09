@@ -19,7 +19,7 @@ Spring social project has an in built data repository implementation for relatio
 1) Add repository to your pom.xml file
     
     {% highlight hxml %}
-    <repositories>
+        <repositories>
         <repository>
             <id>spring-social-neo4j</id>
             <url>https://raw.github.com/shanika/spring-social-neo4j/mvn-repo/</url>
@@ -33,7 +33,7 @@ Spring social project has an in built data repository implementation for relatio
 
 2) Add dependency to your pom.xml file 
     {% highlight hxml %}
-    <dependency>
+        <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-social-neo4j</artifactId>
         <version>0.0.1-SNAPSHOT</version>
@@ -46,7 +46,7 @@ Spring social project has an in built data repository implementation for relatio
 
 
     {% highlight java %}
-    @Autowired
+        @Autowired
     private Neo4jServer server;
     
     @Override
