@@ -1,23 +1,39 @@
 ---
 layout: default
 ---
+<div class="parallax-container" style="z-index: 46; background-color: #191919;;">
+    <div style="float: right; width: 50%; height: 100%; z-index: 47; background-color: #0F0F0F;"></div>
+    <div class="container parallax" style="z-index: 48"><img src="bgimg.jpg"></div>
+</div>
+<div class="container" style="position: relative; z-index: 49">
+    <div style="position: absolute; top: -75px;left: 25px; z-index: 50">
+        <img src="https://avatars.githubusercontent.com/u/1057716?v=3" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+    </div>
+    <div class="col" style="position: relative;">
 
-<div class="home">
+        <div class="row" style="height: 80px;">
+        </div>
 
-  <h1 class="page-heading">Posts</h1>
+        <div class="row">
+            <b>Blog Posts</b>
+        </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <div class="row">
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <h5>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h5>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+        <div class="row">
+            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+        </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    </div>
 </div>
