@@ -14,6 +14,38 @@
        .parallax-container {
            height: 250px;
        }
+
+       .circleicon
+       {
+           width:40px;
+           height:40px;
+           border-radius:50%;
+           font-size:17px;
+           color:#e0e0e0;
+           line-height:40px;
+           text-align:center;
+           border: solid 2px #e0e0e0;
+           -webkit-transition: border-color 1s, color 1s;
+           -moz-transition:    border-color 1s, color 1s;
+           -ms-transition:     border-color 1s, color 1s;
+           -o-transition:      border-color 1s, color 1s;
+           transition:         border-color 1s, color 1s;
+       }
+
+       .circleicon-red:hover {
+           color: #f44336;
+           border-color: #f44336;
+           /*box-shadow: 0 0 8px rgba(183, 28, 28, 0.60);*/
+           cursor: pointer;
+       }
+
+       .circleicon-blue:hover {
+           color: #2196f3;
+           border-color: #2196f3;
+           /*box-shadow: 0 0 8px rgba(13, 71, 161, 0.60);*/
+           cursor: pointer;
+       }
+
        body {
            display: flex;
            min-height: 100vh;
@@ -22,5 +54,15 @@
        .site-content {
            flex: 1 0 auto;
        }
+
+       svg {
+           fill: currentColor;
+       }
    </style>
+    <script>
+        function goto(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
+    </script>
 </head>
